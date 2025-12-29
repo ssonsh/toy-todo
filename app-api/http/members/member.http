@@ -1,13 +1,13 @@
 @host = http://localhost:8080
-@memberId = 1
+@memberId = 2
 
 ### Member 생성
 POST {{host}}/api/v1/members
 Content-Type: application/json
 
 {
-  "email": "a@todo.com",
-  "name": "Alice"
+  "email": "b@todo.com",
+  "name": "BBB"
 }
 
 ### Member 조회

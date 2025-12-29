@@ -30,10 +30,15 @@ class MemberController (
         memberQueryService.getById(id).toResponse()
 }
 
-private fun Member.toResponse(): MemberRs =
-    MemberRs(
-        id = id.value,
+private fun Member.toResponse(): MemberRs {
+
+    val memberId = requireNotNull(id) { "Member id must be set when mapping to response" }
+    val created = requireNotNull(createdAt) { "Member createdAt must be set when mapping to response" }
+
+    return MemberRs(
+        id = memberId.value,
         email = email.value,
         name = name,
-        createdAt = createdAt.toString(),
+        createdAt = created.toString(),
     )
+}

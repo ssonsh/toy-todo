@@ -23,10 +23,9 @@ class MemberRepositoryAdapter (
 
 private fun Member.toEntity(): MemberJpaEntity =
     MemberJpaEntity(
-        id = if (id.value == 0L) 0L else id.value,
+        id = this.id?.value ?: 0L, // 저장 전이면 0으로 정의 (Identity 전략 사용)
         email = email.value,
         name = name,
-        createdAt = createdAt,
     )
 
 private fun MemberJpaEntity.toDomain(): Member =

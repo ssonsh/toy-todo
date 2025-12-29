@@ -3,10 +3,10 @@ package com.todo.domain
 import java.time.Instant
 
 data class Member(
-    val id: MemberId,
+    val id: MemberId? = null,   // 저장 전 : null, 저장 후 : 값 존재
     val email: MemberEmail,
     val name: String,
-    val createdAt: Instant,
+    val createdAt: Instant? = null, // 저장 전 : null, 저장 후 : 값 존재
 )
 
 @JvmInline
