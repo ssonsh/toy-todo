@@ -9,4 +9,5 @@ include(
     "application",
     "domain",
     "infrastructure:persistence",
+    "common-lib"
 )

@@ -5,6 +5,7 @@ plugins {
 
 dependencies {
     api(project(":domain"))
+    implementation(project(":common-lib"))
 
     implementation("org.springframework:spring-context")
     implementation("org.springframework:spring-tx")
