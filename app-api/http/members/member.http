@@ -1,5 +1,5 @@
 @host = http://localhost:8080
-@memberId = 2
+@memberId = 5
 
 ### Member 생성
 POST {{host}}/api/v1/members
