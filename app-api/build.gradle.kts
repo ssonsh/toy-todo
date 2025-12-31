@@ -7,6 +7,7 @@ plugins {
 dependencies {
     implementation(project(":application"))
     implementation(project(":common-lib"))
+    implementation(project(":support"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
