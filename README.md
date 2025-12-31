@@ -56,6 +56,19 @@ toy-todo/
 #### 🔍 support
 - **역할**: 모니터링, 로깅 등 운영 지원 기능
 
+### 의존성 방향
+```
+app-api → application → domain
+   ↓         ↓
+support   common-lib
+```
+
+- **app-api**: application, support, common-lib 의존
+- **application**: domain, common-lib 의존
+- **domain**: 외부 의존성 없음 (순수 도메인 & jpa db 접근)
+- **support**: 독립적인 모듈
+- **common-lib**: 독립적인 모듈
+
 ## 실행 방법
 
 ### 1. 데이터베이스 실행
