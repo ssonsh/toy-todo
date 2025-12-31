@@ -8,6 +8,5 @@ include(
     "app-api",
     "application",
     "domain",
-    "infrastructure:persistence",
     "common-lib"
 )

@@ -1,6 +1,6 @@
-package com.todo.infrastructure.persistence.member
+package com.todo.domain.persistence.member
 
-import com.todo.application.member.port.MemberRepository
+import com.todo.domain.member.port.MemberRepository
 import com.todo.domain.member.Member
 import com.todo.domain.member.MemberEmail
 import com.todo.domain.member.MemberId

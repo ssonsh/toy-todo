@@ -1,4 +1,4 @@
-package com.todo.domain
+package com.todo.domain.member
 
 import java.time.Instant
 

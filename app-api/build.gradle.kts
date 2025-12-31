@@ -6,7 +6,6 @@ plugins {
 
 dependencies {
     implementation(project(":application"))
-    implementation(project(":infrastructure:persistence"))
     implementation(project(":common-lib"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")

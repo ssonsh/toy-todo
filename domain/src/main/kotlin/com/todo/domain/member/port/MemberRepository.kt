@@ -1,8 +1,8 @@
-package com.todo.application.member.port
+package com.todo.domain.member.port
 
-import com.todo.domain.Member
-import com.todo.domain.MemberEmail
-import com.todo.domain.MemberId
+import com.todo.domain.member.Member
+import com.todo.domain.member.MemberEmail
+import com.todo.domain.member.MemberId
 
 interface MemberRepository {
     fun save(member: Member): Member

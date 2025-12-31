@@ -4,7 +4,7 @@ import com.todo.api.member.rqrs.MemberRs
 import com.todo.api.member.rqrs.RegisterMemberRq
 import com.todo.application.member.MemberCommandService
 import com.todo.application.member.MemberQueryService
-import com.todo.domain.Member
+import com.todo.domain.member.Member
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable

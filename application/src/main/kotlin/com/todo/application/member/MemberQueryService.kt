@@ -1,9 +1,9 @@
 package com.todo.application.member
 
-import com.todo.application.member.port.MemberRepository
+import com.todo.domain.member.port.MemberRepository
 import com.todo.common.error.NotFoundException
-import com.todo.domain.Member
-import com.todo.domain.MemberId
+import com.todo.domain.member.Member
+import com.todo.domain.member.MemberId
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
