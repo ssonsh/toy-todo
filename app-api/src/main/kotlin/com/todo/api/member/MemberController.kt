@@ -5,6 +5,7 @@ import com.todo.api.member.rqrs.RegisterMemberRq
 import com.todo.application.member.MemberCommandService
 import com.todo.application.member.MemberQueryService
 import com.todo.domain.member.Member
+import jakarta.validation.Valid
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -22,7 +23,7 @@ class MemberController (
 ){
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    fun register(@RequestBody req: RegisterMemberRq): MemberRs =
+    fun register(@Valid @RequestBody req: RegisterMemberRq): MemberRs =
         memberCommandService.register(req.email, req.name).toResponse()
 
     @GetMapping("/{id}")
