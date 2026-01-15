@@ -9,6 +9,7 @@ dependencies {
 
     implementation("org.springframework:spring-context")
     implementation("org.springframework:spring-tx")
+    implementation("org.springframework:spring-web")
 
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
