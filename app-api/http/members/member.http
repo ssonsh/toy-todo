@@ -6,10 +6,20 @@ POST {{host}}/api/v1/members
 Content-Type: application/json
 
 {
-  "email": "b@todo.com",
-  "name": "BBB"
+  "email": "ccc@todo.com",
+  "name": "bbbb"
 }
 
 ### Member 조회
 GET {{host}}/api/v1/members/{{memberId}}
 Accept: application/json
+
+
+### Member 생성 (비속어에 의한 예외발생)
+POST {{host}}/api/v1/members
+Content-Type: application/json
+
+{
+  "email": "ccc@todo.com",
+  "name": "fuck"
+}

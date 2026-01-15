@@ -9,7 +9,7 @@ class ProfanityValidator(
 ) {
     fun containsProfanity(text: String): Boolean {
         val response = restClient.get()
-            .uri("https://www.purgomalum.com/service/containsprofanity?text={text}", text)
+            .uri("http://www.purgomalum.com/service/containsprofanity?text={text}", text)
             .retrieve()
             .body(String::class.java)
         
